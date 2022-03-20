@@ -1,0 +1,236 @@
+.gridPanePrincipal{
+    -fx-justify-content: center;
+    -fx-background-color: grey;
+    -fx-padding: 20px;
+    -fx-margin: 10px;
+}
+
+.contenedor-titulo {
+    -fx-background-color: black;
+    -fx-padding: 0px;
+    -fx-alignment: top-center;
+    -fx-margin-buttom: 10px;
+}
+
+.titulo{
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+    -fx-background-color: transparent;
+    -fx-alignment: top-center;
+    -fx-text-aling: center;
+    -fx-text-fill: darkgrey;
+}
+
+.buttons{
+    -fx-background-color: transparent;
+    -fx-padding: 4;
+}
+
+.button:hover{
+    -fx-color: -fx-hover-base;
+}
+
+.boton-accion {
+    -fx-background-color: white;
+}
+
+.menu_bar,
+.menu_bar .container,
+.menu_bar .container .menu.openvertically,
+.menu_bar .container .menu.openvertically .label,
+.menu_bar .container .menu.openvertically .label .text{
+    -fx-background-color: black;
+    -fx-fill: white;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-stroke: white;
+}
+
+.menu_bar .container .menu.openvertically:focus,
+.menu_bar .container .menu.openvertically:hover,
+.menu_bar .container .menu.openvertically:default {
+    -fx-background-color: darkgrey;
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.menu_bar .container .menu-button {
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.menu_bar .container .menu-button .label {
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.menu_bar .container .menu-button:focus,
+.menu_bar .container .menu-button:hover,
+.menu_bar .container .menu-button:focus:hover,
+.menu_bar .container .menu-button:after,
+.menu_bar .container .menu-button:default, 
+.menu_bar .container .menu-button:visited {
+    -fx-background-color: darkgrey;
+}
+
+.menu_bar .container .menu-button .menu-item {
+     -fx-background-color: black;
+}
+
+.menu_bar .container .menu-button .menu-item:focus,
+.menu_bar .container .menu-button .menu-item:hover {
+    -fx-background-color: darkgrey;
+}
+
+.id{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.nombre{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.toolBar{
+    -fx-margin: 20px;
+}
+
+.email{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.telefono{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.ambito{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.internacional{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white; 
+    -fx-font-weight: bold;
+}
+
+#checkSi{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white; 
+    -fx-font-weight: bold;
+}
+
+#checkNo{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white; 
+    -fx-font-weight: bold;
+}
+
+.combo-box .list-cell,
+.combo-box .list-cell:focus,
+.combo-box .list-cell:empty {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-font-weight: bold;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: darkgrey;
+    -fx-text-fill: white;
+    -fx-border-color: darkgrey;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+.combo-box .list-cell,
+.combo-box .list-cell:focus,
+.combo-box .list-cell:empty {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: darkgrey;
+    -fx-text-fill: white;
+    -fx-border-color: darkgrey;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+.tabla-empresa .column-header-background,
+.tabla-empresa .column-header-background .nested-column-header {
+    -fx-background-color: darkgrey;
+    -fx-border-color: white;
+    -fx-text-fill: white; 
+}
+
+.tabla-empresa .column-header-background .nested-column-header .table-column .label {
+   -fx-background-color: darkgrey;
+   -fx-border-color: darkgrey;
+   -fx-text-fill: white;  
+   -fx-alignment: center;
+   -fx-padding: 0px;
+   -fx-border-width: 0px;
+}
+
+.tabla-empresa .column-header-background .nested-column-header .table-column {
+   -fx-background-color: darkgrey;
+   -fx-border-color: darkgrey;
+   -fx-border-width: 1px;
+   -fx-table-cell-border-color: darkgrey;
+   -fx-alignment: center;
+   -fx-padding: 0px;
+}
+.tabla-departamentos .table-row-cell {
+    -fx-padding: 0px;
+}
+
+.tabla-empresa .table-row-cell:odd { 
+    -fx-background-color:grey;
+    -fx-text-fill: white;
+}
+
+.tabla-empresa .table-row-cell:even {
+    -fx-background-color:white;
+    -fx-text-fill: grey;
+}
+
+.tabla-empresa .table-row-cell:even:selected .table-cell,
+.tabla-empresa .table-row-cell:odd:selected .table-cell {
+    -fx-text-fill: black;
+    -fx-fill: black;
+    -fx-alignment: center;
+}
+
+.tabla-empresa .table-column {
+    -fx-border-color: darkgrey;
+    -fx-alignment: center;
+    -fx-padding-right: 0px;
+}

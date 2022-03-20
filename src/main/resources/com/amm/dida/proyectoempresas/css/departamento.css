@@ -1,0 +1,197 @@
+.gridPanePrincipal{
+    -fx-justify-content: center;
+    -fx-background-color: grey;
+    -fx-padding: 25px;
+    -fx-margin-left: 0px;
+    -fx-text-alignement: left;
+}
+
+.contenedor-titulo {
+    -fx-background-color: black;
+    -fx-padding: 0px;
+    -fx-alignment: top-center;
+    -fx-margin-buttom: 10px;
+}
+
+.menu_bar,
+.menu_bar .container,
+.menu_bar .container .menu.openvertically,
+.menu_bar .container .menu.openvertically .label,
+.menu_bar .container .menu.openvertically .label .text{
+    -fx-background-color: black;
+    -fx-fill: white;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-stroke: white;
+}
+
+.menu_bar .container .menu.openvertically:focus,
+.menu_bar .container .menu.openvertically:hover,
+.menu_bar .container .menu.openvertically:default {
+    -fx-background-color: darkgrey;
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.menu_bar .container .menu-button {
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.menu_bar .container .menu-button .label {
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.menu_bar .container .menu-button:focus,
+.menu_bar .container .menu-button:hover,
+.menu_bar .container .menu-button:focus:hover,
+.menu_bar .container .menu-button:after,
+.menu_bar .container .menu-button:default, 
+.menu_bar .container .menu-button:visited {
+    -fx-background-color: darkgrey;
+}
+
+.menu_bar .container .menu-button .menu-item {
+     -fx-background-color: black;
+}
+
+.menu_bar .container .menu-button .menu-item:focus,
+.menu_bar .container .menu-button .menu-item:hover {
+    -fx-background-color: darkgrey;
+}
+
+.titulo{
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+    -fx-background-color: transparent;
+    -fx-alignment: top-center;
+    -fx-text-aling: center;
+    -fx-text-fill: darkgrey;
+}
+
+.titulo{
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+    -fx-background-color: transparent;
+    -fx-alignment: top-center;
+    -fx-text-aling: center;
+    -fx-text-fill: darkgrey;
+}
+
+.buttons{
+    -fx-background-color: transparent;
+    -fx-padding: 4;
+}
+
+.button:hover{
+    -fx-color: -fx-hover-base;
+}
+
+.boton-accion {
+    -fx-background-color: white;
+}
+
+.nombreDepartamento{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.presupuestoDepartamento{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.departamentos{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.radio-button .radio {
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+    -fx-border-color: -fx-darkest-grey-color;
+    -fx-background-color: white;
+    -fx-background-image: null;
+    -fx-border-radius: 15px;
+    -fx-padding: 3px;
+}
+
+.radio-button .radio:selected {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:armed {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:determinate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:indeterminate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button .dot {
+    -fx-background-radius: 15px;
+    -fx-padding: 8px;
+}
+
+.tabla-departamentos .column-header-background,
+.tabla-departamentos .column-header-background .nested-column-header {
+    -fx-background-color: darkgrey;
+    -fx-border-color: white;
+    -fx-text-fill: white; 
+}
+
+.tabla-departamentos .column-header-background .nested-column-header .table-column .label {
+   -fx-background-color: darkgrey;
+   -fx-border-color: darkgrey;
+   -fx-text-fill: white;  
+   -fx-alignment: center;
+   -fx-padding: 0px;
+   -fx-border-width: 0px;
+}
+
+.tabla-departamentos .column-header-background .nested-column-header .table-column {
+   -fx-background-color: darkgrey;
+   -fx-border-color: darkgrey;
+   -fx-border-width: 1px;
+   -fx-table-cell-border-color: darkgrey;
+   -fx-alignment: center;
+   -fx-padding: 0px;
+}
+.tabla-departamentos .table-row-cell {
+    -fx-padding: 0px;
+}
+
+.tabla-departamentos .table-row-cell:odd { 
+    -fx-background-color:grey;
+    -fx-text-fill: white;
+}
+
+.tabla-departamentos .table-row-cell:even {
+    -fx-background-color:white;
+    -fx-text-fill: grey;
+}
+
+.tabla-departamentos .table-row-cell:even:selected .table-cell,
+.tabla-departamentos .table-row-cell:odd:selected .table-cell {
+    -fx-text-fill: black;
+    -fx-fill: black;
+    -fx-alignment: center;
+}
+
+.tabla-departamentos .table-column {
+    -fx-border-color: darkgrey;
+    -fx-alignment: center;
+    -fx-padding-right: 0px;
+}

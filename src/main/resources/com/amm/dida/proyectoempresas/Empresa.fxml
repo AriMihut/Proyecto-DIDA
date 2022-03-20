@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.collections.FXCollections?>
+
+<VBox fx:id="paginaPrincipal" xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.amm.dida.proyectoempresas.EmpresaController">
+    <stylesheets>
+        <URL value="@/com/amm/dida/proyectoempresas/css/empresa.css"/>
+    </stylesheets>
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding> 
+    <VBox HBox.hgrow="ALWAYS" prefWidth="${paginaPrincipal.width}" styleClass="titulo" >
+         <Label text="EMPRESA" styleClass="titulo" HBox.hgrow="ALWAYS"  
+                prefWidth="${paginaPrincipal.width}"/>
+    </VBox>
+    <VBox spacing="20">
+        <GridPane styleClass="gridPanePrincipal" alignment="CENTER" hgap="20" vgap="20" style="-fx-justify-content: center">
+            <Label styleClass="nombre" text="Nombre" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="nombre" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label styleClass="email" text="Email" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="email" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+            <Label styleClass="telefono" text="Telefono" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="telefono" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+            <Label styleClass="ambito" text="Ámbito" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <TextField fx:id="ambito" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+            <HBox GridPane.rowIndex="3" GridPane.columnIndex="4"  GridPane.columnSpan="3" spacing="5">
+                <Label styleClass="internacional" text="Internacional"/>
+                <CheckBox styleClass="ckeckSi" fx:id="checkSi" text="Sí"/>
+                <CheckBox fx:id="checkNo" text="No"/>
+            </HBox>
+
+            <ComboBox styleClass="combobox" fx:id="comboboxEmpresas" GridPane.rowIndex="4" GridPane.columnIndex="4"  
+                      GridPane.columnSpan="3" />
+
+            <Button styleClass="boton-atras" onAction="#puerta" GridPane.rowIndex="1" GridPane.columnIndex="0" >
+                    <graphic>
+                        <ImageView>
+                            <Image url="@../../../../iconos/puerta.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+            <MenuBar styleClass="menu_bar" fx:id="menuBarEmpresas" GridPane.rowIndex="1" GridPane.columnIndex="4">
+                <Menu fx:id="menuDepartamentos" text="Departamentos">
+                    <MenuItem text="Abrir" onAction="#abrirDptos"/>
+                    <MenuItem text="Salir" onAction="#salir"/>
+                 </Menu>
+                 <Menu fx:id="menuEmpleados" text="Empleados">
+                    <MenuItem text="Abrir" onAction="#abrirEmpl"/>
+                    <MenuItem text="Salir" onAction="#salir"/>
+                </Menu>
+            </MenuBar>
+
+            <ToolBar fx:id="toolBar" styleClass="buttons" HBox.hgrow= "ALWAYS" 
+                     GridPane.rowIndex="1" GridPane.columnIndex="1" 
+                     GridPane.columnSpan="2">
+                 <Button styleClass="boton-accion" onAction="#anadirModificar"  GridPane.rowIndex="1" 
+                         GridPane.columnIndex="0">
+                   <graphic>
+                        <ImageView>
+                            <Image url="@../../../../iconos/anadir.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button styleClass="boton-accion" onAction="#prepararModificar" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@../../../../iconos/modificar.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button styleClass="boton-accion" onAction="#eliminar" GridPane.rowIndex="1" GridPane.columnIndex="2">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@../../../../iconos/eliminar.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </ToolBar>
+        </GridPane>
+        <TableView fx:id="tablaEmpresas" styleClass="tabla-empresa">
+            <columns>
+                <TableColumn fx:id="id" text="Id">
+                </TableColumn>
+                <TableColumn fx:id="nombreEmpresa" text="Nombre">
+                </TableColumn>
+                <TableColumn fx:id="emailEmpresa" text="Email">
+                </TableColumn>
+                <TableColumn fx:id="telefonoEmpresa" text="Telefono">
+                </TableColumn>
+                 <TableColumn fx:id="ambitoEmpresa" text="Ambito">
+                </TableColumn>
+                <TableColumn fx:id="isInternacionalColumn" text="Internacional">
+                </TableColumn>
+                <TableColumn fx:id="mercanciaTtaEmpresa" text="Mercancia Transportada">
+                </TableColumn>
+            </columns>
+        </TableView>
+    </VBox>
+</VBox>

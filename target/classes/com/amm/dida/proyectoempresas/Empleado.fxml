@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.geometry.Insets?>
+<?import java.lang.String?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.collections.FXCollections?>
+
+<VBox fx:id="paginaPrincipal" xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.amm.dida.proyectoempresas.EmpleadoController">
+
+    <stylesheets>
+        <URL value="@/com/amm/dida/proyectoempresas/css/empleado.css"/>
+    </stylesheets>
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding> 
+    <VBox HBox.hgrow="ALWAYS" prefWidth="${paginaPrincipal.width}" styleClass="titulo" >
+        <Label text="EMPLEADOS" styleClass="titulo" HBox.hgrow="ALWAYS"  
+                prefWidth="${paginaPrincipal.width}"/>
+    </VBox>
+    <GridPane styleClass="gridPanePrincipal" alignment="CENTER" hgap="20" vgap="20" 
+              style="-fx-justify-content: center">
+        
+        <Label styleClass="nombreEmpleado" text="Nombre" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="nombreEmpleado" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label styleClass="fechaAlta" text="Fecha Alta" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <DatePicker fx:id="fechaAlta" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        
+        <Label styleClass="labelDepartamentos" text="Departamento" GridPane.rowIndex="4"  GridPane.columnIndex="0"/>
+        <ComboBox fx:id="departamentos" GridPane.rowIndex="4" GridPane.columnIndex="1" /> 
+        
+        <Label styleClass="labelEmpresas" text="Empresa" GridPane.rowIndex="5"  GridPane.columnIndex="0"/>
+        <ComboBox fx:id="empresas" GridPane.rowIndex="5" GridPane.columnIndex="1"/> 
+        
+        <ComboBox styleClass="comboboxSexo" fx:id="comboboxSexo" GridPane.rowIndex="2" 
+                  GridPane.columnIndex="3" />
+        
+        <HBox GridPane.rowIndex="3" GridPane.columnIndex="3" spacing="5">
+                <Label styleClass="esResponsable" text="Responsable"/>
+                <CheckBox fx:id="checkSi" text="Sí"/>
+        </HBox>
+        
+        <Button styleClass="boton-atras" onAction="#atras" GridPane.rowIndex="6" GridPane.columnIndex="2" >
+            <graphic>
+                <ImageView>
+                    <Image url="@../../../../iconos/atras.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        
+        <MenuBar styleClass="menu_bar" fx:id="menuBar" GridPane.rowIndex="1" 
+                 GridPane.columnIndex="0" GridPane.columnSpan="4">
+            <Menu fx:id="menuDepartamentos" text="Departamentos">
+                <MenuItem text="Abrir" onAction="#abrirDptos"/>
+                <MenuItem text="Salir" onAction="#salir"/>
+            </Menu>
+            <Menu fx:id="menuEmpresas" text="Empresas">
+                <MenuItem text="Abrir" onAction="#abrirEmpresas"/>
+                <MenuItem text="Salir" onAction="#salir"/>
+            </Menu>
+             <Menu fx:id="menuEmpleado" text="Nº Empleados">
+                <MenuItem fx:id="menuItemEmpleado" text="Grafico" onAction="#abrirGrafico"/>
+            </Menu>
+        </MenuBar> 
+ 
+        <ToolBar fx:id="toolBar" styleClass="buttons" HBox.hgrow= "ALWAYS" 
+                 GridPane.rowIndex="6" GridPane.columnIndex="0" 
+                 GridPane.columnSpan="2">
+            <Button styleClass="boton-accion" onAction="#anadirModificar"  GridPane.rowIndex="1" 
+                     GridPane.columnIndex="0">
+                <graphic>
+                    <ImageView>
+                        <Image url="@../../../../iconos/anadir.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button styleClass="boton-accion" onAction="#prepararModificar" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                <graphic>
+                    <ImageView>
+                        <Image url="@../../../../iconos/modificar.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button styleClass="boton-accion" onAction="#eliminar" GridPane.rowIndex="1" GridPane.columnIndex="2">
+                <graphic>
+                    <ImageView>
+                        <Image url="@../../../../iconos/eliminar.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </ToolBar>
+     
+    </GridPane>
+
+    <StackPane styleClass="tabla-contenedor" HBox.hgrow="ALWAYS" style="-fx-padding: 20 0 0 0">
+        <TableView fx:id="tablaEmpleados" styleClass="tablaEmpleados">
+            <columns>
+                <TableColumn fx:id="id_columna" text="id">
+                </TableColumn>
+                <TableColumn fx:id="nombre_empleado" text="nombre">
+                </TableColumn>
+                <TableColumn fx:id="fecha_alta" text="fechaAlta">
+                </TableColumn>
+                <TableColumn fx:id="sexo_columna" text="sexo">
+                </TableColumn>
+                <TableColumn fx:id="departamentos_columna" text="departamento">
+                </TableColumn>
+                <TableColumn fx:id="empresas_columna" text="empresa">
+                </TableColumn>
+                <TableColumn fx:id="es_responsable" text="esResponsable">
+                </TableColumn>
+            </columns>
+        </TableView>
+    </StackPane>
+</VBox>
+
+

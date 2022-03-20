@@ -1,0 +1,38 @@
+.inicio-derecha-label {
+    -fx-font-size: 30px;
+}
+
+.textField-error {
+    -fx-background-color: white;
+    -fx-border-color: grey;
+}
+
+#pantallaRegistro {
+    -fx-background-color: grey;
+}
+
+.contenedor-general TextField {
+    -fx-background-color:  white;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-prompt-text-fill: black;
+    
+}
+
+.contenedor-general{
+    -fx-alignment: center;
+     -fx-spacing: 20px;
+}
+
+.contenedor-general .contedor-botones {
+    -fx-alignment: center; 
+    -fx-spacing: 20px;
+}
+
+.contenedor-general .contedor-botones .button {
+    -fx-background-color:  grey;
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+    -fx-background-radius: 30%;
+    -fx-border-radius: 30%;
+}

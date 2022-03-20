@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="pantallaRegistro" xmlns:fx="http://javafx.com/fxml/1" HBox.hgrow="ALWAYS"
+      fx:controller="com.amm.dida.proyectoempresas.RegistroController">
+    <stylesheets>
+        <URL value="@/com/amm/dida/proyectoempresas/css/Registro.css"/>
+    </stylesheets>
+    <VBox styleClass="contenedor-general" VBox.vgrow="ALWAYS">
+        <Label text="FORMULARIO DE REGISTRO"/>
+        <TextField fx:id="usuario" promptText="Usuario" focusTraversable="false" prefWidth="${pantallaRegistro.width*0.5}" maxWidth="${pantallaRegistro.width*0.5}"/>
+        <TextField fx:id="contrasena" promptText="Contraseña" focusTraversable="false" prefWidth="${pantallaRegistro.width*0.5}" maxWidth="${pantallaRegistro.width*0.5}"/>
+        <TextField fx:id="repetirContrasena" promptText="Repetir contraseña" focusTraversable="false" prefWidth="${pantallaRegistro.width*0.5}" maxWidth="${pantallaRegistro.width*0.5}"/>
+        <Label fx:id="etiquetaAviso" text="" styleClass="etiqueta-aviso" visible="false"/>
+        <HBox styleClass="contedor-botones">
+            <Button text="Aceptar" onAction="#aceptar"  focusTraversable="false"/>
+            <Button text="Atrás" onAction="#volverALogin"  focusTraversable="false"/>
+        </HBox>
+    </VBox>  
+</VBox>

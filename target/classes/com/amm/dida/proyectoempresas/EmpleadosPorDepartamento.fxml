@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+
+<VBox fx:id="paginaEmplPorDpto" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="reporte.EmpleadosPorDepartamentoController">
+    <StackPane>
+        <PieChart fx:id="chart" title="Empleados por departamento" legendSide="BOTTOM"/>
+    </StackPane>
+    <Button styleClass="boton-atras" onAction="#atras" GridPane.rowIndex="10" GridPane.columnIndex="4" >
+                <graphic>
+                    <ImageView>
+                        <Image url="@../../../../iconos/atras.png"/>
+                    </ImageView>
+                </graphic>
+    </Button> 
+</VBox>       

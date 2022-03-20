@@ -1,0 +1,235 @@
+.gridPanePrincipal{
+    -fx-justify-content: center;
+    -fx-background-color: grey;
+    -fx-padding: 10px;
+    -fx-padding-right: 5px;
+    -fx-margin-left: 0px;
+    -fx-text-alignement: left;
+}
+
+.buttons{
+    -fx-background-color: transparent;
+    -fx-padding: 4;
+}
+
+.esResponsable{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.labelDepartamentos{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.labelEmpresas{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.si{
+     -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.contenedor-titulo {
+    -fx-background-color: black;
+    -fx-padding: 0px;
+    -fx-alignment: top-center;
+    -fx-margin-buttom: 10px;
+}
+
+.menu_bar,
+.menu_bar .container,
+.menu_bar .container .menu.openvertically,
+.menu_bar .container .menu.openvertically .label,
+.menu_bar .container .menu.openvertically .label .text{
+    -fx-background-color: black;
+    -fx-fill: white;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-stroke: white;
+}
+
+.menu_bar .container .menu.openvertically:focus,
+.menu_bar .container .menu.openvertically:hover,
+.menu_bar .container .menu.openvertically:default {
+    -fx-background-color: darkgrey;
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.menu_bar .container .menu-button {
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.menu_bar .container .menu-button .label {
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.menu_bar .container .menu-button:focus,
+.menu_bar .container .menu-button:hover,
+.menu_bar .container .menu-button:focus:hover,
+.menu_bar .container .menu-button:after,
+.menu_bar .container .menu-button:default, 
+.menu_bar .container .menu-button:visited {
+    -fx-background-color: darkgrey;
+}
+
+.menu_bar .container .menu-button .menu-item {
+     -fx-background-color: black;
+}
+
+.menu_bar .container .menu-button .menu-item:focus,
+.menu_bar .container .menu-button .menu-item:hover {
+    -fx-background-color: darkgrey;
+}
+
+.titulo{
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+    -fx-background-color: transparent;
+    -fx-alignment: top-center;
+    -fx-text-aling: center;
+    -fx-text-fill: darkgrey;
+}
+
+.nombreEmpleado{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.fechaAlta{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.idDpto{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.idEmpresa{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.si{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+
+}
+
+.departamentos{
+    -fx-font-size: 15px;
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+.comboboxSexo{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-min-height: 30px;
+}
+
+#checkSi{
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white; 
+    -fx-font-weight: bold;
+}
+
+.tablaEmpleados .column-header-background,
+.tablaEmpleados .column-header-background .nested-column-header {
+    -fx-background-color: darkgrey;
+    -fx-border-color: white;
+    -fx-text-fill: white; 
+}
+
+.tablaEmpleados .column-header-background .nested-column-header .table-column .label {
+   -fx-background-color: darkgrey;
+   -fx-border-color: darkgrey;
+   -fx-text-fill: white;  
+   -fx-alignment: center;
+   -fx-padding: 0px;
+   -fx-border-width: 0px;
+}
+
+.tablaEmpleados .column-header-background .nested-column-header .table-column {
+   -fx-background-color: darkgrey;
+   -fx-border-color: darkgrey;
+   -fx-border-width: 1px;
+   -fx-table-cell-border-color: darkgrey;
+   -fx-alignment: center;
+   -fx-padding: 0px;
+}
+.tablaEmpleados .table-row-cell {
+    -fx-padding: 0px;
+}
+
+.tablaEmpleados .table-row-cell:odd { 
+    -fx-background-color:grey;
+    -fx-text-fill: white;
+}
+
+.tablaEmpleados .table-row-cell:even {
+    -fx-background-color:white;
+    -fx-text-fill: grey;
+}
+
+.tablaEmpleados .table-row-cell:even:selected .table-cell,
+.tablaEmpleados .table-row-cell:odd:selected .table-cell {
+    -fx-text-fill: black;
+    -fx-fill: black;
+    -fx-alignment: center;
+}
+
+.tablaEmpleados .table-column {
+    -fx-border-color: darkgrey;
+    -fx-alignment: center;
+    -fx-padding-right: 0px;
+}
+
+.combo-box .list-cell,
+.combo-box .list-cell:focus,
+.combo-box .list-cell:empty {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: darkgrey;
+    -fx-text-fill: white;
+    -fx-border-color: darkgrey;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+
+    
+

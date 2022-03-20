@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+
+<VBox fx:id="paginaAdministracion" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="com.amm.dida.proyectoempresas.DepartamentoController">
+    <stylesheets>
+        <URL value="@/com/amm/dida/proyectoempresas/css/departamento.css"/>
+    </stylesheets>
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding> 
+    <VBox HBox.hgrow="ALWAYS" prefWidth="${paginaAdministracion.width}" styleClass="titulo" >
+         <Label text="DEPARTAMENTOS" styleClass="titulo" HBox.hgrow="ALWAYS"  
+                prefWidth="${paginaAdministracion.width}"/>
+    </VBox>
+    <VBox spacing="20">
+       <GridPane styleClass="gridPanePrincipal" alignment="CENTER" hgap="20" vgap="20" style="-fx-justify-content: center">
+       <Label styleClass="departamentos" text="Ámbito departamento" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <HBox prefHeight="100.0" prefWidth="100.0" spacing="10.0" GridPane.rowIndex="0" GridPane.columnIndex="1" 
+         GridPane.columnSpan="12" >
+                <fx:define>
+                    <ToggleGroup fx:id="group" />
+                </fx:define>
+                <children>
+                <RadioButton fx:id="finanzas" toggleGroup="$group" mnemonicParsing="false" text="Finanzas"/>
+                <RadioButton fx:id="informatica" toggleGroup="$group" mnemonicParsing="false" text="Informática" />
+                <RadioButton fx:id="logistica" toggleGroup="$group" mnemonicParsing="false" text="Logística" />
+                <RadioButton fx:id="formacion" toggleGroup="$group" mnemonicParsing="false" text="Formación" />
+                </children>
+        </HBox>
+        
+        <Label styleClass="nombreDepartamento" text="Nombre Departamento" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="nombreDpto" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        
+        <Label styleClass="presupuestoDepartamento" text="Presupuesto" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="presupuesto" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+       
+        <ToolBar fx:id="toolBar" styleClass="buttons" HBox.hgrow= "ALWAYS" 
+                 GridPane.rowIndex="5" GridPane.columnIndex="4" 
+                 GridPane.columnSpan="9">
+             <Button styleClass="boton-accion" onAction="#anadirModificar" GridPane.rowIndex="1" 
+                     GridPane.columnIndex="0">
+               <graphic>
+                    <ImageView>
+                        <Image url="@../../../../iconos/anadir.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button styleClass="boton-accion" onAction="#prepararModificar" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                <graphic>
+                    <ImageView>
+                        <Image url="@../../../../iconos/modificar.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button styleClass="boton-accion" onAction="#eliminar" GridPane.rowIndex="1" GridPane.columnIndex="2">
+                <graphic>
+                    <ImageView>
+                        <Image url="@../../../../iconos/eliminar.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </ToolBar>
+     
+    <Button styleClass="boton-atras" onAction="#atras" GridPane.rowIndex="5" GridPane.columnIndex="0" >
+                <graphic>
+                    <ImageView>
+                        <Image url="@../../../../iconos/atras.png"/>
+                    </ImageView>
+                </graphic>
+    </Button>
+    <MenuBar styleClass="menu_bar" fx:id="menuBarDepartamentos" GridPane.rowIndex="2" 
+             GridPane.columnIndex="4" GridPane.columnSpan="8" >
+        
+        <Menu fx:id="menuEmpresas" text="Empresas">
+                <MenuItem text="Abrir" onAction="#abrirEmpresas"/>
+                <MenuItem text="Salir" onAction="#salir"/>
+             </Menu>
+             <Menu fx:id="menuEmpleados" text="Empleados">
+                <MenuItem text="Abrir" onAction="#abrirEmpl"/>
+                <MenuItem text="Salir" onAction="#salir"/> 
+        </Menu>
+    </MenuBar> 
+    </GridPane>
+    <TableView fx:id="tablaDepartamentos" styleClass="tabla-departamentos">
+        <columns>
+            <TableColumn fx:id="id" text="id">
+            </TableColumn>
+            <TableColumn fx:id="ambito_departamento" text="ambitoDepartamento">
+            </TableColumn>
+            <TableColumn fx:id="nombre_departamento" text="nombreDepartamento">
+            </TableColumn>
+            <TableColumn fx:id="presupuesto_departamento" text="presupuesto">
+            </TableColumn>
+        </columns>
+    </TableView>
+</VBox>
+</VBox>        

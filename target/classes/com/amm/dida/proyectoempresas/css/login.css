@@ -1,0 +1,65 @@
+#pantallaLogin {
+    -fx-spacing: 20px;
+    -fx-background-color: black;
+    -fx-alignment: top-center;
+}
+
+.etiqueta-principal{
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-text-aling: center;
+}
+
+.contenedor-titulo {
+    -fx-background-color: grey;
+    -fx-padding: 0px;
+    -fx-alignment: top-center;
+}
+
+.contenedor-general {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
+
+.contenedor-general .button {
+    -fx-background-color:  grey;
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+    -fx-background-radius: 30%;
+    -fx-border-radius: 30%;
+}
+
+.contenedor-general .textField {
+    -fx-border-width: 3px;
+}
+
+.contenedor-general .dark-textfield {
+    -fx-background-color:  black;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-text-aling: center;
+    -fx-border-color: white;
+    -fx-prompt-text-fill: white;
+}
+
+.contenedor-general .light-textfield {
+    -fx-background-color:  white;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-text-aling: center;
+    -fx-border-color: grey;
+    -fx-prompt-text-fill: black;
+}
+
+.contedor-registro {
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+}
+
+.contedor-registro .label {
+    -fx-text-fill: white;
+}
+
+

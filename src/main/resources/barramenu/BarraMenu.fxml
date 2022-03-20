@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="barramenu.BarraMenuController">
+   
+    <MenuBar>
+        <Menu text="Administracion">
+            <MenuItem text="Departamentos" onAction="#mostrarPantallaDepartamentos"/>
+            <MenuItem text="Empleados" onAction="#mostrarPantallaEmpleados"/>   
+        </Menu>
+        <Menu text="Reportes">
+            <MenuItem text="Chart" onAction="#mostrarPantallaChart"></MenuItem>
+        </Menu>
+    </MenuBar>
+</StackPane>

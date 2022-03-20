@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="pantallaLogin" xmlns:fx="http://javafx.com/fxml/1" HBox.hgrow="ALWAYS"
+      fx:controller="com.amm.dida.proyectoempresas.LoginController">
+    <stylesheets>
+        <URL value="@/com/amm/dida/proyectoempresas/css/Login.css"/>
+    </stylesheets>
+    <VBox HBox.hgrow="ALWAYS" prefWidth="${pantallaLogin.width}" styleClass="contenedor-titulo" >
+         <Label text="Empresa 24/7" styleClass="etiqueta-principal" HBox.hgrow="ALWAYS"  prefWidth="${pantallaLogin.width}"/>
+    </VBox>
+    <VBox styleClass="contenedor-general" VBox.vgrow="ALWAYS" >
+        <TextField fx:id="usuario" promptText="Introduce nombre de usuario"  styleClass="dark-textfield" focusTraversable="false" prefWidth="${pantallaLogin.width*0.5}" maxWidth="${pantallaLogin.width*0.5}"/>
+        <TextField fx:id="contrasena" promptText="Introduce contraseña" styleClass="light-textfield" focusTraversable="false" prefWidth="${pantallaLogin.width*0.5}" maxWidth="${pantallaLogin.width*0.5}"/>
+        <Label fx:id="etiquetaAviso" text="" style="-fx-text-fill:white;"/>
+        <Button text="Autentificarse" onAction="#autentificarse"  focusTraversable="false"/>
+        <HBox styleClass="contedor-registro">
+            <Label text="¿Todavía no estás registrado?"/> 
+            <Button text="Registrarse" onAction="#registrarse"  focusTraversable="false"/>
+        </HBox>
+    </VBox>  
+</VBox>

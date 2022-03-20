@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<VBox fx:id="paginaDptosPorEmpresa" xmlns:fx="http://javafx.com/fxml/1" spacing="20"
+fx:controller="reporte.EmpleadosPorDepartamentoController">
+    <Button onAction="#cargarDatosEnElChart">
+    </Button> 
+    <StackPane >
+        <PieChart fx:id="chart" title="Empleados por departamento" legendSide="BOTTOM">
+        </PieChart>
+    </StackPane>
+</VBox>
